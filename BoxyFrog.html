@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Asg2 Will Hord</title>
+	</head>
+
+	<body onload="main()">
+		<canvas id="webgl" width="600px" height="600px"> </canvas>
+		<p id="numdot">ms: - fps: -</p>
+		<p>
+			<label>Camera Angle X:</label>
+			<input type="range" min="-360" max="360" value="-45" step="1" id="angleSlide" />
+			<br>
+			<label>Camera Angle Y:</label>
+			<input type="range" min="-360" max="360" value="0" step="1" id="angleSlide2" />
+		</p>
+		<p>
+			<Label>Toggle animation</Label>
+			<button id="animationOn">On</button>
+			<button id="animationOff">Off</button>
+		</p>
+
+		<br>
+		<p>
+			<h3>Joint sliders:</h3>
+			<div style="display: flex;">
+				<div style="display: flex; flex-direction: column; padding-right: 10px;">
+					<h4>Back Right Leg</h4>
+					<div>
+						<label>Joint 1:</label>
+						<input type="range" min="-135" max="135" value="0" step="1" id="backRightLegJoint1" />
+					</div>
+					<div>
+						<label>Joint 2:</label>
+						<input type="range" min="-90" max="90" value="0" step="1" id="backRightLegJoint2" />
+					</div>
+					<div>
+						<label>Joint 3:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="backRightLegJoint3" />
+					</div>
+				</div>
+				<div style="padding-right: 10px;">
+					<h4>Back Left Leg</h4>
+					<div>
+						<label>Joint 1:</label>
+						<input type="range" min="-135" max="135" value="0" step="1" id="backLeftLegJoint1" />	
+					</div>
+					<div>
+						<label>Joint 2:</label>
+						<input type="range" min="-90" max="90" value="0" step="1" id="backLeftLegJoint2" />
+					</div>
+					<div>
+						<label>Joint 3:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="backLeftLegJoint3" />
+					</div>
+				</div>
+				<div style="padding-right: 10px;">
+					<h4>Front Right Leg</h4>
+					<div>
+						<label>Joint 1:</label>
+						<input type="range" min="-135" max="135" value="0" step="1" id="frontRightLegJoint1" />	
+					</div>
+					<div>
+						<label>Joint 2:</label>
+						<input type="range" min="-90" max="90" value="0" step="1" id="frontRightLegJoint2" />
+					</div>
+					<div>
+						<label>Joint 3:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="frontRightLegJoint3" />
+					</div>
+				</div>
+				<div style="padding-right: 10px;">
+					<h4>Front Left Leg</h4>
+					<div>
+						<label>Joint 1:</label>
+						<input type="range" min="-135" max="135" value="0" step="1" id="frontLeftLegJoint1" />	
+					</div>
+					<div>
+						<label>Joint 2:</label>
+						<input type="range" min="-90" max="90" value="0" step="1" id="frontLeftLegJoint2" />
+					</div>
+					<div>
+						<label>Joint 3:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="frontLeftLegJoint3" />
+					</div>
+				</div>
+			</div>
+			<div style="display: flex;">
+				<div>
+					<h4>Body/Head</h4>
+					<div>
+						<label>Body:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="bodyJoint" />
+					</div>
+					<div>
+						<label>Head Joint:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="HeadJoint" />
+					</div>
+					<div>
+						<label>Upper Lip:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="upperLipJoint" />
+					</div>
+					<div>
+						<label>Lower Lip:</label>
+						<input type="range" min="-45" max="45" value="0" step="1" id="lowerLipJoint" />
+					</div>
+			</div>
+
+		</p>
+
+		<script src="lib/webgl-utils.js"></script>
+		<script src="lib/webgl-debug.js"></script>
+		<script src="lib/cuon-utils.js"></script>
+		<script src="lib/cuon-matrix.js"></script>
+		<!-- <script src="HelloPoint1.js"></script> -->
+		<script src="Triangle.js"></script>
+		<script src="Point.js"></script>
+		<script src="Circle.js"></script>
+		<script src="Cube.js"></script>
+		<!-- <script src="Frog.js"></script> -->
+		<!-- <script src="Sphere.js"></script> -->
+		<script src="TriangularPrism.js"></script>
+		<script src="BlockyAnimal.js"></script>
+	</body>
+</html>
