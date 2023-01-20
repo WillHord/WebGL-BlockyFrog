@@ -2,11 +2,13 @@
 
 Blocky Frog is just that, a frog made from boxes. I made it in my CSE 160 Intro to Computer Graphics class using WebGL. Each limb is movable and the entire animal is animated. 
 
+You can check it out [HERE](https://willhord.github.io/WebGL-BlockyFrog/BoxyFrog.html) or test it locally with the instructions below:
+
 ## Getting Started
 
 ### Prerequisites
 
-You will need an up to date version of Xcode with Swift v5 capabilities
+You will need the latest version of Javascript and a browser that supports WebGL (Chrome, Firefox, Safari, etc...)
 
 ```
 git clone https://github.com/WillHord/WebGL-BlockyFrog.git
